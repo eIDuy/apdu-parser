@@ -1,0 +1,8 @@
+GET ATTRIBUTE	x	34	x
+GET ATTRIBUTE	x	35	x
+GET CHALLENGE	Request a random number from the smart card.	84	ISO/IEC 7816-4
+GET DATA (CA)	Used to retrieve DO information	CB	
+GET DATA	Read TLV-coded data objects.	CA	ISO/IEC 7816-4
+GET DATA	x	CB	x
+GET NEXT DATA	x	CC	x
+GET NEXT DATA	x	CD	x
