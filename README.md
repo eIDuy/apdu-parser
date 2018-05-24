@@ -5,7 +5,7 @@ Project includes default APDU commands and APDU responses default lists with des
 
 ## Usage
 
-```
+```sh
 python apdu_parser.py -i <input_file>
 
 Options:
@@ -30,31 +30,45 @@ Options:
 
 Basic usage:
 
-<code>python apdu_parser.py -i sample_files/default_log.txt</code>
+```sh
+python apdu_parser.py -i sample_files/default_log.txt
+```
 
-Setting output file:
+Set output file:
 
-<code>python apdu_parser.py -i sample_files/default_log.txt -o outputs/default_log_output.txt</code>
+```sh
+python apdu_parser.py -i sample_files/default_log.txt -o outputs/default_log_output.txt
+```
 
-Parsing every input file entry as APDU command:
+Parse every line in input file as an APDU command:
 
-<code>python apdu_parser.py -i sample_files/commands_log.txt -c</code>
+```sh
+python apdu_parser.py -i sample_files/commands_log.txt -c
+```
 
-Parsing every input file entry as APDU response:
+Parse every line in input file as an APDU response:
 
-<code>python apdu_parser.py -i sample_files/responses_log.txt -r</code>
+```sh
+python apdu_parser.py -i sample_files/responses_log.txt -r
+```
 
-Setting custom command descriptions file:
+Set custom command descriptions file:
 
-<code>python apdu_parser.py -i sample_files/default_log.txt -C sample_files/custom_command_descriptions.txt</code>
+```sh
+python apdu_parser.py -i sample_files/default_log.txt -C sample_files/custom_command_descriptions.txt
+```
 
-Setting custom command responses file:
+Set custom command responses file:
 
-<code>python apdu_parser.py -i sample_files/default_log.txt -R sample_files/custom_responses_descriptions.txt</code>
+```sh
+python apdu_parser.py -i sample_files/default_log.txt -R sample_files/custom_responses_descriptions.txt
+```
 
-Show output results in differents colors in terminal (just works in Linux / Mac):
+Show output results in different colors in terminal (works only on Linux / MacOS):
 
-<code>python apdu_parser.py -i sample_files/default_log.txt -T</code>
+```sh
+python apdu_parser.py -i sample_files/default_log.txt -T
+```
 
 ## Requirements
 
